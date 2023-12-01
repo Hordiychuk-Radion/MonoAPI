@@ -2,7 +2,7 @@ import requests
 import pyodbc
 from datetime import datetime
 
-token = "uaHPxo-LlsuqtqOdWvgTsbP9wnqYMTzbAWinBeTvPnT8"
+token = "Radion"
 headers = {'X-Token': token}
 BASE_URL = 'https://api.monobank.ua'
 account = 0  
@@ -18,7 +18,7 @@ try:
     if response.status_code == 200:
         data = response.json()
 
-        connection = pyodbc.connect('DRIVER={SQL Server};SERVER=DESKTOP-8FLI5JE;DATABASE=APIMO;Trusted_Connection=yes')
+        connection = pyodbc.connect('DRIVER={SQL Server};SERVER=DESKTOP-////;DATABASE=////;Trusted_Connection=yes')
         cursor = connection.cursor()
 
       
