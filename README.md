@@ -4,7 +4,7 @@
 Hello, guests
 I would like to introduce you to my project Monobank API. 
 
-1 step. In order to pull transactions from monobank through my script, you first need to create a table in SQL SERVER with all the necessary columns, you can find it in a file called 'MONO.sql', then we can use the script 'mono.py' substituting our data, run it and monobank sends us its transaction data through the API.
+Step 1. In order to pull transactions from monobank through my script, you first need to create a table in SQL SERVER with all the necessary columns, you can find it in a file called 'MONO.sql', then we can use the script 'mono.py' substituting our data, run it and monobank sends us its transaction data through the API.
   ![sql result](https://github.com/Hordiychuk-Radion/MonoAPI/assets/139583782/3707c7af-e7bd-49c9-8012-3c46decf11ba)
 
 Step 2 For a better understanding of which categories the money goes to, we need to make some changes to our table, we need to use the json from the hit hub where the mcc code and categories are located, and we need to write this json to the sql table, you will find the code for this under the name 'JSON.sql', I also drop the link to JSON.
